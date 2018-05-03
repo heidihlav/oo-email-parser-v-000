@@ -12,8 +12,8 @@ class EmailParser
   end
 
   def parse
-    email_arr = emails.gsub(/\W\s/, " ").split
-    email_arr.uniq
+    parsed_emails = emails.gsub(/\W\s/, " ").split
+    parsed_emails.uniq
   end
 
 end
