@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    emails.scan(/\W|\s/)  #(/\W|\s/)
+    emails.scan(/\W\s/)  #(/\W|\s/)
   end
 
 end
