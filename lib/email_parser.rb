@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    emails.split(/\W\s/)  #(/\W|\s/)
+    emails.gsub(/\W\s/, ", ")  #(/\W|\s/)
   end
 
 end
